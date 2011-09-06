@@ -1,25 +1,31 @@
-# timeago: a jQuery plugin
+# dojo-timeago: ported jQuery plugin
 
-Timeago is a jQuery plugin that makes it easy to support automatically updating
+<a href="https://github.com/rmm5t/jquery-timeago">Timeago</a> is a jQuery plugin that makes it easy to support automatically updating
 fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago") from ISO 8601
 formatted dates and times embedded in your HTML (à la microformats).
 
+Dojo-Timeago is an attempt to rewrite original Timeago functionality to dojo widgets structure.
+
 ## Usage
 
-First, load jQuery and the plugin:
+First, load Dojo and the plugin:
 
 ```html
-<script src="jquery.min.js" type="text/javascript"></script>
-<script src="jquery.timeago.js" type="text/javascript"></script>
+<script src="dojo/dojo.js" type="text/javascript"></script>
+<script type="text/javascript">
+    dojo.require('timeago.Timeago');
+</script>
 ```
 
-Now, let's attach it to your timestamps on DOM ready:
+Now, let's attach it to your timestamps in programmatic manner:
 
 ```html
 <pre>
-   jQuery(document).ready(function() {
-     jQuery("abbr.timeago").timeago();
-   });
+dojo.ready(function() {
+    dojo.query('abbr.timeago').forEach(function(el){
+        new timeago.Timeago({}, el);
+    });
+});
 </pre>
 ```
 
@@ -39,9 +45,10 @@ As time passes, the timestamps will automatically update.
 
 **For more usage and examples**: [http://timeago.yarp.com/](http://timeago.yarp.com/)
 
-**For different language configurations**: [http://gist.github.com/6251](http://gist.github.com/6251)
 
 ## Author
+
+[Michał Rączka] (https://github.com/michaloo) - ported to dojo
 
 [Ryan McGeary](http://ryan.mcgeary.org) ([@rmm5t](http://twitter.com/rmm5t))
 
