@@ -43,6 +43,13 @@ into something like this:
 
 As time passes, the timestamps will automatically update.
 
+**Declarative approach**
+You can also use dojo markup-based widget declaration by adding data-dojo-type attribute:
+
+```html
+<abbr class="timeago" data-dojo-type="timeago.Timeago" title="2008-02-27T00:23:00Z">July 17, 2008</abbr>
+```
+
 **For more usage and examples**: [http://timeago.yarp.com/](http://timeago.yarp.com/)
 
 
