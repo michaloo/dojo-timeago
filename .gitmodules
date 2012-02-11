@@ -1,0 +1,18 @@
+[submodule "modules/requirejs"]
+	path = modules/requirejs
+	url = https://github.com/jrburke/requirejs.git
+[submodule "modules/require-cs"]
+	path = modules/require-cs
+	url = https://github.com/jrburke/require-cs.git
+[submodule "modules/dojo"]
+	path = modules/dojo
+	url = https://github.com/dojo/dojo.git
+[submodule "modules/dijit"]
+	path = modules/dijit
+	url = https://github.com/dojo/dijit.git
+[submodule "modules/dojox"]
+	path = modules/dojox
+	url = https://github.com/dojo/dojox.git
+[submodule "modules/dojo-util"]
+	path = modules/dojo-util
+	url = https://github.com/dojo/util.git
