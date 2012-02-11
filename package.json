@@ -1,0 +1,13 @@
+{
+	"name": "dojo-timeago",
+	"description": "jQuery timeago plugin ported to dojo/dijit",
+	"version": "0.0.1",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/michaloo/dojo-timeago.git"
+	},
+	"devDependencies": {
+		"mocha": "0.10.2",
+		"chai": "0.1.6"
+	}
+}
