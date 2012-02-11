@@ -16,3 +16,6 @@
 [submodule "modules/dojo-util"]
 	path = modules/dojo-util
 	url = https://github.com/dojo/util.git
+[submodule "modules/dojo-fix"]
+	path = modules/dojo-fix
+	url = git@github.com:michaloo/dojo-fix.git
