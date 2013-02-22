@@ -135,6 +135,10 @@ define(['dijit/_Widget',
 		},
 		distance: function (date) {
 			return (new Date().getTime() - date.getTime());
+		},
+		destroy: function () {
+			clearInterval(this.interval);
+			this.inherited(arguments);
 		}
 	});
 	return timeAgo;

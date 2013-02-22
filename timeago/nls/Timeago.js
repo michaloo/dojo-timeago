@@ -20,5 +20,6 @@ define({
 		numbers: []
 	}),
 	"ru": true,
-	"bg": true
+	"bg": true,
+	"de": true
 });
